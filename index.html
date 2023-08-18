@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemetry Calculations</title>
+
+    <!-- tailwind and dasi-UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- google font css -->
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- header part -->
+    <header>
+        <img src="./images/b.jpg" class="w-full" style="height: 400px;" alt="">
+    </header>
+
+
+    <!-- main part -->
+    <div class="max-w-screen-2xl mx-auto px-4 md:px-16 lg:px-24   py-2   flex flex-col md:flex-row justify-center gap-5">
+
+        <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 flex-1">
+
+              
+            <!-- Triangle-->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/triangle.png" alt="Shoes">
+                </div>
+                       
+               <div class="card-body bg-[#0d112d]">
+                    
+                   <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Triangle</h1>
+       
+                  <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = 0.5 * b * h ;
+                   </h1>
+
+                   <div class="flex gap-2 mt-1">
+
+
+                    <input  class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="base">
+
+                   <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+                   <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="height">
+
+                   <h1 class="text-base font-bold text-white text-center">cm </h1>
+
+
+                   </div>
+
+                   <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area1">20</span> cm<sup>2</sup></h1>
+             
+                         
+                     <div class="card-actions justify-center mt-5 ">
+                        <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+                    </div>
+       
+               </div>
+            </div>
+
+            <!-- Rectangle -->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/rectangle.png" alt="Shoes">
+                </div>
+                  
+          <div class="card-body bg-[#0d112d]">
+               
+              <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Rectangle</h1>
+  
+    <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = w * h ;
+              </h1>
+
+              <div class="flex gap-2 mt-1">
+
+
+               <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="width">
+
+              <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+              <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="height">
+
+              <h1 class="text-base font-bold text-white text-cente">cm<sup>2</sup></h1>
+
+              
+
+
+              </div>
+
+              <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area2">20</span> cm</h1>
+        
+                    
+                <div class="card-actions justify-center mt-5">
+                   <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+               </div>
+  
+            </div>
+
+
+            </div>
+
+
+
+            <!-- Parallelogram -->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/parallelogram.png" alt="Shoes">
+                </div>
+                  
+          <div class="card-body bg-[#0d112d]">
+               
+              <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Parallelogram</h1>
+  
+    <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = b * h ;
+              </h1>
+
+              <div class="flex gap-2 mt-1">
+
+
+               <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="base">
+
+              <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+              <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="height">
+
+              <h1 class="text-base font-bold text-white text-cente">cm<sup>2</sup></h1>
+
+              
+
+
+              </div>
+
+              <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area3">20</span> cm<sup>2</sup></h1>
+        
+                    
+                <div class="card-actions justify-center mt-5">
+                   <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+               </div>
+  
+            </div>
+
+
+            </div>
+
+
+            <!-- Rhombus -->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/rhombus.png" alt="Shoes">
+                </div>
+                       
+               <div class="card-body bg-[#0d112d]">
+                    
+                   <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Rhombus</h1>
+       
+                   <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub> ;
+                   </h1>
+
+                   <div class="flex gap-2 mt-1">
+
+
+                    <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="d1">
+
+                   <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+                   <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="d2">
+
+                   <h1 class="text-base font-bold text-white text-center">cm </h1>
+
+
+                   </div>
+
+                   <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area4">20</span> cm<sup>2</sup></h1>
+             
+                         
+                     <div class="card-actions justify-center mt-5">
+                        <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+                    </div>
+       
+               </div>
+            </div>
+
+
+            <!-- Pentagon -->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/pentagon.png" alt="Shoes">
+                </div>
+                       
+               <div class="card-body bg-[#0d112d]">
+                    
+                   <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Pentagon</h1>
+       
+                   <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = 0.5 * p * b ;
+                   </h1>
+
+                   <div class="flex gap-2 mt-1">
+
+
+                    <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="p">
+
+                   <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+                   <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="b">
+
+                   <h1 class="text-base font-bold text-white text-center">cm </h1>
+
+
+                   </div>
+
+                   <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area5">20</span> cm<sup>2</sup></h1>
+             
+                         
+                     <div class="card-actions justify-center mt-5">
+                        <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+                    </div>
+       
+               </div>
+            </div>
+
+            <!-- Ellipse -->
+            <div class="card w-full bg-[purple] rounded-xl shadow-xl">
+                  
+                <div class="m-5">
+                    <img style="height: 220px;" class="w-full " src="./images/ellipse.png" alt="Shoes">
+                </div>
+                       
+               <div class="card-body bg-[#0d112d]">
+                    
+                   <h1 class="name text-2xl font-extrabold text-[#f56245] text-center">Ellipse</h1>
+       
+                   <h1 class="text-xl font-bold text-white text-center pt-1 mb-2">Area (A) = π * a * b ;
+                   </h1>
+
+                   <div class="flex gap-2 mt-1">
+
+
+                    <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="a">
+
+                   <h1 class="text-base font-bold text-white text-center pt-1">cm </h1>
+
+                   <input class="text-center text-xl w-1/2 rounded-md" type='number' placeholder="b">
+
+                   <h1 class="text-base font-bold text-white text-center">cm </h1>
+
+
+                   </div>
+
+               <h1 class="text-2xl font-bold text-white text-center pt-3">Area : <span id="area6">20</span> cm<sup>2</sup></h1>
+             
+                         
+                     <div class="card-actions justify-center mt-5">
+                        <button class="a btn bg-[purple] w-full text-white hover:bg-neutral border-none ">Calculate</button>
+                    </div>
+       
+               </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="text-white mt-10   text-center lg:w-1/4 md:w-1/2">
+
+
+
+            <!--  Area Calculaton-->
+            <div class=" px-2 bg-[#0d112d] mb-4 pb-5 rounded-xl">
+  
+  
+              <h1 class="text-xl md:text-2xl font-bold mb-5 py-5 " style="border-bottom: 3px solid gray; margin-top: 2px;">
+               Area Calculations</h1>
+    
+              
+             
+               <div id="geometry_added" class="grid gap-x-2">
+
+                <!-- <p>Hello</p> -->
+
+
+
+               </div>
+              
+    
+    
+             
+  
+    
+            </div>
+          
+          </div>  
+       
+       
+   </div> 
+   
+   
+   <!-- footer -->
+   <footer>
+    <img src="./images/c.jpg" class="w-full" style="height: 200px;" alt="">
+   </footer>
+
+
+    <!-- script source -->
+    <script src="area.js"></script>
+</body>
+
+</html>
